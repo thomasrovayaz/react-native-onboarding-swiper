@@ -80,6 +80,7 @@ class Onboarding extends Component {
       allowFontScalingText,
       titleStyles,
       subTitleStyles,
+      height
     } = this.props;
 
     return (
@@ -89,7 +90,7 @@ class Onboarding extends Component {
         title={title}
         subtitle={subtitle}
         width={this.state.width || Dimensions.get('window').width}
-        height={this.state.height || Dimensions.get('window').height}
+        height={height || this.state.height || Dimensions.get('window').height}
         containerStyles={containerStyles}
         imageContainerStyles={imageContainerStyles}
         allowFontScaling={allowFontScalingText}
